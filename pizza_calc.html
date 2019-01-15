@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+   <script>
+   alert ('Welkom bij Dobbelsteen Pizzas');
+   var voornaam = prompt ('wat is u voornaam?');
+   var achternaam = prompt ('wat is u achternaam?');
+   var woonplaats = prompt ('waar woont u?');
+   var hoeveelheidSmallPizzas = prompt ('Hoeveel small pizzas sized wilt u? (€3.50 per pizza)');
+   var hoeveelheidMediumPizzas = prompt ('Hoeveel medium pizzas sized wilt u? (€4.99 per pizza)');
+   var hoeveelheidLargePizzas = prompt ('Hoeveel large pizzas sized wilt u? (€7.50 per pizza)');
+
+
+ document.write ('<h1> Bestelde Pizzas </h1>')
+ document.write ('Small Pizzas: ' + hoeveelheidSmallPizzas);
+ document.write ('<br>');
+ document.write ('Medium Pizzas: ' + hoeveelheidMediumPizzas);
+ document.write ('<br>');
+ document.write ('Large Pizzas: ' + hoeveelheidLargePizzas);
+ document.write ('<br>');
+
+    const SMALLPIZZAPRIJS = (hoeveelheidSmallPizzas * 3.50);
+    const MEDIUMPIZZAPRIJS = (hoeveelheidMediumPizzas * 4.99);
+    const LARGEPIZZAPRIJS = (hoeveelheidLargePizzas * 7.50);
+    const TOTAALPRIJS = (SMALLPIZZAPRIJS + MEDIUMPIZZAPRIJS + LARGEPIZZAPRIJS)
+
+ document.write ('<h2> Prijzen </h2>');
+ document.write ('Prijs voor ' + hoeveelheidSmallPizzas + ' small pizzas = €'  );
+ document.write (SMALLPIZZAPRIJS);
+ document.write ('<br>');
+ document.write ('Prijs voor ' + hoeveelheidMediumPizzas + ' medium pizzas = €'  );
+ document.write (MEDIUMPIZZAPRIJS);
+ document.write ('<br>');
+ document.write ('Prijs voor ' + hoeveelheidLargePizzas + ' large pizzas = €'  );
+ document.write (LARGEPIZZAPRIJS);
+
+ document.write ('<h3> Totaal prijs </h3>')
+ document.write ('€' + TOTAALPRIJS)
+
+   </script>
+</html>
